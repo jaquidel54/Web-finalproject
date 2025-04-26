@@ -1,0 +1,91 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding-top: 70px; /* space for fixed navbar */
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+h2{
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.menu, .social-icons, .navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li, .social-icons li, .navbar-nav li {
+  margin: 0 10px;
+}
+
+.menu li a, .social-icons li a, .nav-link {
+  color: #f0f0f0 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover, .social-icons li a:hover, .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.menu li a.active, .nav-link.active {
+  color: #ffcc00 !important;
+  font-weight: bold;
+}
+
+/* Profile Picture */
+.profilepicture img {
+  width: 150px;          
+  height: 150px;         
+  border-radius: 50%;    
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* Section Styling */
+.section-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Horizontal Separator */
+.separator,
+.footer-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
